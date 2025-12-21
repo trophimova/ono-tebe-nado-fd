@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   justify-content: space-around;
-  align-items: center; 
+  align-items: center;
   padding: 92px 50px 96px;
 }
 
@@ -12,7 +12,7 @@
   gap: 32px;
   font-weight: normal;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 1;
   text-underline-position: under;
   list-style: circle;
 }
@@ -33,12 +33,13 @@
   font-weight: normal;
   font-size: 18px;
   font-style: normal;
-  line-height: 24.3px;
+  line-height: 1.35;
 }
 
 .header__address {
   justify-self: end;
-  width: 240px;
+  max-width: 240px;
+  width: 100%;
 }
 
 .address__link {
@@ -58,12 +59,6 @@
  inset: 0;
  z-index: 0;
  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.section__cover-image {
-  position: absolute; 
-  top: 0;
-  height: 100%;
 }
 
 .cover__title,
@@ -115,7 +110,7 @@
   color: #fff;
   font-weight: normal;
   font-size: 22px;
-  line-height: 28px;
+  line-height: 1.27;
   text-transform: uppercase;
   word-spacing: 0.8em;
 }
@@ -125,6 +120,7 @@
   padding: 12px 32px 11px 31px;
   color: #fff;
   font-size: 22px;
+  line-height: 1;
   text-transform: uppercase;
   background: transparent;
 }
@@ -137,7 +133,7 @@
   margin: 0 0 34px 40px;
   font-weight: bold;
   font-size: 40px;
-  line-height: 100%;
+  line-height: 1;
   text-transform: uppercase;
 }
 
@@ -155,9 +151,6 @@
 
 .card {
   height: 100%;
-}
-
-.card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -188,7 +181,7 @@
   color: #fff;
   font-weight: bold;
   font-size: 22px;
-  line-height: 120%;
+  line-height: 1.2;
   text-decoration: underline;
   text-transform: uppercase;
 }
@@ -198,7 +191,7 @@
   color: #fff;
   font-weight: normal;
   font-size: 20px;
-  line-height: 120%;
+  line-height: 1.2;
 }
 
 .lots__look-more-link {
@@ -206,7 +199,7 @@
   margin: 30px 0 0 40px;
   font-weight: normal;
   font-size: 20px;
-  line-height: 100%;
+  line-height: 1;
   text-decoration: underline;
   text-underline-position: under;
 }
@@ -241,7 +234,7 @@
   margin-bottom: 100px;
   font-weight: bold;
   font-size: 40px;
-  line-height: 100%;
+  line-height: 1;
   text-transform: uppercase;
 }
 
@@ -252,11 +245,8 @@
   max-width: 693px;
   font-weight: normal;
   font-size: 20px;
+  line-height: 1.2;
   line-height: 24px;
-}
-
-.about__text-start {
-  max-width: 688px;
 }
 
 .footer {
@@ -274,14 +264,14 @@
   margin: 6px 0 115px;
   font-weight: normal;
   font-size: 18px;
-  line-height: -1;
+  line-height: 1;
   text-align: center;
   list-style: none;
+  text-underline-position: under;
 }
 
 .footer__social-list {
   display: flex;
-  flex-direction: row;
   justify-self: right;
   gap: 48px;
   margin: 4px 0 131px;
